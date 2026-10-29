@@ -1,19 +1,19 @@
-# Top 20 Claude Skills for Software Engineering
+# Top 20 Claude skills for software engineering
 
-A weekly-curated list. Software engineering only. No fluff.
+A weekly curated list. Software engineering only, no fluff.
 
-**Last curated:** 2026-10-27 (v1)
-**Next curation:** Saturday 2026-10-31, ~9:00 AM PT
-**Rule:** Always 20. One in, one out. Dropped skills move to `archive/`, they are never deleted.
+Last updated: 2026-10-28 (v1)
+Next curation: Saturday 2026-10-31, around 9am PT
+Rule: always 20. One in, one out. Dropped skills move to archive, never deleted.
 
-This repo is a curated index, not a copy of the skills. Each entry links to its source repo. Read the source README and license before installing. Star counts below are as of 2026-10-27 / 2026-10-28 and change daily — treat them as a popularity signal, not a quality verdict.
+This is an index, not a copy. Each entry links to its source repo. Read the source README and license before you install anything. Star counts below are from Oct 27-28 and change daily. Treat them as a popularity signal, not proof of quality.
 
 ## How to use this list
 
-1. Start with one workflow framework from #1–#5, not all five.
-2. Add the official Anthropic skills you actually need from #8–#12.
-3. Add one skill per pain point after that: UI, understanding a codebase, context, or tokens.
-4. Install only what you will use. Every enabled skill adds load to context.
+1. Start with one workflow framework from 1-5, not all five.
+2. Add the official Anthropic skills you actually need from 8-12.
+3. Add one skill per real pain point after that: UI, understanding code, context, tokens.
+4. Install only what you will use. Every enabled skill costs context.
 
 Install patterns (check the source repo first, commands change):
 
@@ -32,89 +32,90 @@ cp -r <skill-folder> .claude/skills/
 
 ## The Top 20
 
-### Workflow / methodology
+### Workflow and methodology
 
 | # | Skill | Source | What it does | When to use it |
 |---|---|---|---|---|
-| 1 | Superpowers | [obra/superpowers](https://github.com/obra/superpowers) — ~306k stars, checked 2026-10-28 via GitHub | Plan-first, test-driven development, systematic debugging, subagent-driven development, verification before completion | You want Claude Code to behave like a disciplined senior engineer, not jump straight to code |
-| 2 | Matt Pocock Skills | [mattpocock/skills](https://github.com/mattpocock/skills) | Small, composable skills for real engineering | You want bite-size skills you can pick one at a time |
-| 3 | Addy Osmani Agent Skills | [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) — ~101k stars | Production-grade spec, build, test, ship workflows | You want a production shipping workflow, not just a coding helper |
-| 4 | GSD — Get Shit Done | [gsd-build/get-shit-done](https://github.com/gsd-build/get-shit-done) | Spec-driven context engineering | You want a spec before code, and context kept tight |
-| 5 | BMAD-METHOD | [bmad-code-org/BMAD-METHOD](https://github.com/bmad-code-org/BMAD-METHOD) | Agile AI-driven development method | You want an agile, role-based method for larger builds |
+| 1 | Superpowers | [obra/superpowers](https://github.com/obra/superpowers), about 306k stars, checked Oct 28 on GitHub | Plan first, test-driven development, systematic debugging, subagent-driven work, verify before finishing | You want Claude Code to act like a disciplined senior engineer instead of jumping straight to code |
+| 2 | Matt Pocock Skills | [mattpocock/skills](https://github.com/mattpocock/skills) | Small composable skills for real engineering work | You want bite-size skills you can adopt one at a time |
+| 3 | Addy Osmani Agent Skills | [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills), about 101k stars | Production-grade spec, build, test, ship workflows | You want a shipping workflow, not just a coding helper |
+| 4 | GSD - Get Shit Done | [gsd-build/get-shit-done](https://github.com/gsd-build/get-shit-done) | Spec-driven work with tight context | You want a spec before code and context kept small |
+| 5 | BMAD-METHOD | [bmad-code-org/BMAD-METHOD](https://github.com/bmad-code-org/BMAD-METHOD) | Agile AI-driven development method | You want an agile, role-based method for bigger builds |
 
-### Thinking / discipline
+### Thinking and discipline
 
 | # | Skill | Source | What it does | When to use it |
 |---|---|---|---|---|
-| 6 | Karpathy Skills | [anthropics/skills discussion / andrej-karpathy-skills](https://github.com/Anthropic-OpenSource/andrej-karpathy-skills) — see note below | Think before coding, simplicity first, surgical changes, goal-driven execution; bug fix = write a reproducing test first | You keep getting over-complicated, 1000-line fixes for 100-line problems |
-| 7 | Planning with Files | [OthmanAdi/planning-with-files](https://github.com/OthmanAdi/planning-with-files) | Breaks tasks into discrete steps, tracks progress in files | Any coding task longer than a few minutes, where Claude loses track |
+| 6 | Karpathy Skills | [andrej-karpathy-skills](https://github.com/Anthropic-OpenSource/andrej-karpathy-skills), see note below | Think before coding, simplicity first, small surgical changes, goal-driven work. A bug fix means writing a reproducing test first | You keep getting 1000-line fixes for 100-line problems |
+| 7 | Planning with Files | [OthmanAdi/planning-with-files](https://github.com/OthmanAdi/planning-with-files) | Breaks tasks into steps and tracks progress in files | Any coding task longer than a few minutes, where Claude loses track |
 
-Note on #6: the Karpathy rules circulate as a single CLAUDE.md file in several mirrors. Verify the source you install from, and read it before use. It biases toward caution — do not run the full ritual on a typo fix.
+Note on 6: the Karpathy rules float around as a single CLAUDE.md in several mirrors. Check the source you install from and read it before use. It leans cautious, so skip the full ritual for a typo fix.
 
-### Official Anthropic — software engineering only
+### Official Anthropic, software engineering only
 
-Source: [anthropics/skills](https://github.com/anthropics/skills) — ~184k stars, 19 skill folders as of 2026-10-21. Only the SWE ones are in the Top 20. Document, brand, art, and comms skills are in `archive/`.
+Source: [anthropics/skills](https://github.com/anthropics/skills), about 184k stars, 19 skill folders as of Oct 21. Only the engineering ones made the Top 20. Document, brand, art, and comms skills are in archive.
 
 | # | Skill | What it does | When to use it |
 |---|---|---|---|
-| 8 | skill-creator | A skill that writes skills, following Anthropic's authoring best practices | Every time you catch yourself explaining the same procedure twice |
-| 9 | mcp-builder | Guide for creating high-quality MCP servers | You need Claude to connect to an API, database, or outside service |
+| 8 | skill-creator | A skill that writes skills, following Anthropic's own authoring practice | Every time you catch yourself explaining the same procedure twice |
+| 9 | mcp-builder | Guide for building good MCP servers | You need Claude to reach an API, database, or outside service |
 | 10 | frontend-design | Distinctive, production-grade UI direction | You build web interfaces and want to avoid generic-looking pages |
-| 11 | artifacts-builder | Build complex claude.ai HTML artifacts with React, Tailwind CSS, shadcn/ui | You build interactive artifacts / web apps in Claude |
-| 12 | webapp-testing | Test local web apps with Playwright for UI verification and debugging | You need browser-driven QA before you ship a web app |
+| 11 | artifacts-builder | Build complex HTML artifacts with React, Tailwind, shadcn | You build interactive artifacts or web apps in Claude |
+| 12 | webapp-testing | Test local web apps with Playwright for UI checks and debugging | You need browser-driven QA before shipping a web app |
 
-### Frontend / UI
-
-| # | Skill | Source | What it does | When to use it |
-|---|---|---|---|---|
-| 13 | UI-UX Pro Max | [nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) | Design intelligence: styles, palettes, UX rules | Your UI looks AI-made; you want a searchable design system |
-| 14 | Taste Skill | [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill) | Strict anti-slop rules for landing pages | You want taste / restraint, not more components |
-
-Caveat: independent blind tests in Oct 2026 ranked Taste last on one test and UI-UX Pro Max first, with high token cost for some design skills. Use one design skill at a time, and judge on your own brief.
-
-### Understanding / docs / context
+### Frontend and UI
 
 | # | Skill | Source | What it does | When to use it |
 |---|---|---|---|---|
-| 15 | Understand-Anything | [Understand-Anything](https://github.com/DerZyklop/Understand-Anything) — see source repo for exact owner | Turns a codebase into an interactive knowledge graph you can explore and ask questions about | You are onboarding to an unfamiliar codebase |
-| 16 | Context7 | [upstash/context7](https://github.com/upstash/context7) | Keeps up-to-date library documentation available to the model | Claude keeps using outdated library APIs |
-| 17 | Claude-Mem | [claude-mem](https://github.com/thedotmack/claude-mem) | Persistent context / memory across sessions | Claude forgets your project between sessions |
-| 18 | Diagram Design | [cathrynlavery/diagram-design](https://github.com/cathrynlavery/diagram-design) — ~53k stars | Architecture, flow, org, and timeline diagrams, 44 types, exports HTML / SVG / PNG | You need deck-ready architecture diagrams from a codebase or brief |
+| 13 | UI-UX Pro Max | [nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) | Design intelligence: styles, palettes, UX rules | Your UI looks AI-made and you want a real design system |
+| 14 | Taste Skill | [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill) | Strict anti-slop rules for landing pages | You want taste and restraint, not more components |
 
-### Efficiency / harness
+Honest caveat: independent blind tests in Oct 2026 ranked UI-UX Pro Max first and Taste last on one test, and some design skills burn a lot of tokens. Use one design skill at a time and judge on your own brief.
+
+### Understanding, docs, context
 
 | # | Skill | Source | What it does | When to use it |
 |---|---|---|---|---|
-| 19 | Caveman | [JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman) | Cuts output tokens hard while keeping technical accuracy | You are hitting usage limits or cost, and want shorter output |
-| 20 | ECC | [affaan-m/ecc](https://github.com/affaan-m/ecc) — see source repo for exact owner | Agent harness optimization: skills, memory, security, research-first workflows | You want one harness system across Claude Code, Codex, Cursor, and related tools |
+| 15 | Understand-Anything | Search "Understand-Anything" on GitHub, see note below | Turns a codebase into an interactive knowledge graph you can explore and ask about | You are onboarding to an unfamiliar codebase |
+| 16 | Context7 | [upstash/context7](https://github.com/upstash/context7) | Keeps current library docs in front of the model | Claude keeps using outdated library APIs |
+| 17 | Claude-Mem | [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) | Persistent memory across sessions | Claude forgets your project between sessions |
+| 18 | Diagram Design | [cathrynlavery/diagram-design](https://github.com/cathrynlavery/diagram-design), about 53k stars | Architecture, flow, org, and timeline diagrams, 44 types, exports to HTML, SVG, PNG | You need clean architecture diagrams from a codebase or a brief |
 
-Verify #15 and #20 owner/repo paths in the source list before installing — names are widely mirrored. Do not install a fork without reading it.
+### Efficiency and harness
 
-## Watchlist — candidates for next Saturday
+| # | Skill | Source | What it does | When to use it |
+|---|---|---|---|---|
+| 19 | Caveman | [JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman) | Cuts output tokens hard while keeping technical accuracy | You are hitting usage limits and want shorter output |
+| 20 | ECC | Search "ECC" or "affaan-m/ecc" on GitHub, see note below | Agent harness tuning: skills, memory, security, research-first workflow | You want one harness setup across Claude Code, Codex, Cursor, and similar tools |
 
-These did not make v1, but are the first to test if a Top 20 slot opens:
+Check the exact owner and repo for 15 and 20 before installing. These names have many mirrors. Do not install a fork without reading it.
 
-- gstack (garrytan/gstack) — full team-in-a-box process
-- Hallmark (Nutlope/hallmark) / Impeccable (pbakaus/impeccable) — anti-AI-slop design, alternative to #13 / #14
-- GitNexus — client-side knowledge graph with built-in RAG agent, alternative to #15
-- Context Engineering / Context Mode — token / context optimization, alternative to #19
-- claude-api (Anthropic) — reference for building with the Claude API and SDKs
+## Watchlist for next Saturday
 
-## What was deliberately left out
+Did not make v1. First in line if a Top 20 slot opens:
 
-See `archive/ARCHIVED.md`. Short version: algorithmic-art, canvas-design, brand-guidelines, internal-comms, slack-gif-creator, theme-factory, and docx / pdf / pptx / xlsx. All real Anthropic skills, just not software engineering.
+- gstack (garrytan/gstack): full team-in-a-box process
+- Hallmark (Nutlope/hallmark) / Impeccable (pbakaus/impeccable): anti-slop design, alternatives to 13 and 14
+- GitNexus: client-side knowledge graph with built-in RAG, alternative to 15
+- Context Engineering / Context Mode: token and context optimization, alternative to 19
+- claude-api (Anthropic): reference for building with the Claude API and SDKs
+
+## Left out on purpose
+
+See archive/ARCHIVED.md. Short version: algorithmic-art, canvas-design, brand-guidelines, internal-comms, slack-gif-creator, theme-factory, docx, pdf, pptx, xlsx. Real Anthropic skills, just not software engineering.
 
 ## Curation rules
 
-Full rules in `CURATION.md`. Short version:
+Full rules in CURATION.md. Short version:
 
-- SWE only.
-- Maintained: a commit or release in the last 90 days, or a clear maintained status.
-- Actually installable and tested on a real task, not just starred.
+- Software engineering only.
+- Maintained: a commit or release in the last 90 days, or an official Anthropic source that is still current.
+- Installable and tested on a real task, not just starred.
 - Stars help, they do not decide.
 - Max 20. One in, one out. Archive, do not delete.
-- Updated every Saturday morning, ~9:00 AM PT.
+- Updated every Saturday morning, around 9am PT.
+- Written like a human wrote it. Keyboard characters only, no AI-style symbols.
 
-## License / attribution
+## License and attribution
 
 This repo is a curated index with links. Each skill keeps its own license and owner. Do not copy a skill's files here without checking its license.
