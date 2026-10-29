@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Top 20 Claude skills for software engineering</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+         line-height: 1.6; color: #1f2328; max-width: 720px; margin: 0 auto; padding: 24px 20px 64px; }
+  h1 { font-size: 1.6em; margin-bottom: 0.2em; }
+  h2 { font-size: 1.2em; margin-top: 2em; border-bottom: 1px solid #d0d7de; padding-bottom: 0.3em; }
+  .meta { color: #57606a; margin-bottom: 2em; }
+  .skill { margin: 1.2em 0; }
+  .skill .name { font-weight: 600; }
+  .skill .num { color: #57606a; font-weight: 400; margin-right: 0.4em; }
+  .skill p { margin: 0.2em 0; }
+  .skill .use { color: #57606a; font-size: 0.95em; }
+  a { color: #0969da; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  ul { padding-left: 1.4em; }
+  li { margin: 0.4em 0; }
+  footer { margin-top: 3em; color: #57606a; font-size: 0.9em; border-top: 1px solid #d0d7de; padding-top: 1em; }
+  @media (prefers-color-scheme: dark) {
+    body { background: #0d1117; color: #e6edf3; }
+    h2 { border-color: #30363d; }
+    .meta, .skill .use, .skill .num, footer { color: #8b949e; }
+    a { color: #58a6ff; }
+    footer { border-color: #30363d; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Top 20 Claude skills for software engineering</h1>
+<p class="meta">A weekly curated list. Software engineering only, no fluff.<br>
+Last updated Oct 28, 2026. Next curation Saturday Oct 31, around 9am PT.<br>
+Rule: always 20. One in, one out. Dropped skills move to archive, never deleted.</p>
+
+<h2>How to use this list</h2>
+<ul>
+  <li>Start with one workflow framework from 1-5, not all five.</li>
+  <li>Add the official Anthropic skills you actually need from 8-12.</li>
+  <li>Add one skill per real pain point after that: UI, understanding code, context, tokens.</li>
+  <li>Install only what you will use. Every enabled skill costs context.</li>
+</ul>
+<p>Install: <code>/plugin marketplace add anthropics/skills</code>, or copy a skill folder into <code>~/.claude/skills/</code>. Check the source repo first, commands change. This is an index, not a copy. Each entry links to its source. Star counts are from Oct 27-28 and move daily.</p>
+
+<h2>Workflow and methodology</h2>
+
+<div class="skill"><p><span class="num">1</span><span class="name"><a href="https://github.com/obra/superpowers">Superpowers</a></span> (about 306k stars)</p>
+<p>Plan first, test-driven development, systematic debugging, subagent-driven work, verify before finishing.</p>
+<p class="use">Use when: you want Claude Code to act like a disciplined senior engineer instead of jumping straight to code.</p></div>
+
+<div class="skill"><p><span class="num">2</span><span class="name"><a href="https://github.com/mattpocock/skills">Matt Pocock Skills</a></span></p>
+<p>Small composable skills for real engineering work.</p>
+<p class="use">Use when: you want bite-size skills you can adopt one at a time.</p></div>
+
+<div class="skill"><p><span class="num">3</span><span class="name"><a href="https://github.com/addyosmani/agent-skills">Addy Osmani Agent Skills</a></span> (about 101k stars)</p>
+<p>Production-grade spec, build, test, ship workflows.</p>
+<p class="use">Use when: you want a shipping workflow, not just a coding helper.</p></div>
+
+<div class="skill"><p><span class="num">4</span><span class="name"><a href="https://github.com/gsd-build/get-shit-done">GSD - Get Shit Done</a></span></p>
+<p>Spec-driven work with tight context.</p>
+<p class="use">Use when: you want a spec before code and context kept small.</p></div>
+
+<div class="skill"><p><span class="num">5</span><span class="name"><a href="https://github.com/bmad-code-org/BMAD-METHOD">BMAD-METHOD</a></span></p>
+<p>Agile AI-driven development method.</p>
+<p class="use">Use when: you want an agile, role-based method for bigger builds.</p></div>
+
+<h2>Thinking and discipline</h2>
+
+<div class="skill"><p><span class="num">6</span><span class="name"><a href="https://github.com/Anthropic-OpenSource/andrej-karpathy-skills">Karpathy Skills</a></span></p>
+<p>Think before coding, simplicity first, small surgical changes, goal-driven work. A bug fix means writing a reproducing test first.</p>
+<p class="use">Use when: you keep getting 1000-line fixes for 100-line problems. Check the source before installing, these rules float around in several mirrors.</p></div>
+
+<div class="skill"><p><span class="num">7</span><span class="name"><a href="https://github.com/OthmanAdi/planning-with-files">Planning with Files</a></span></p>
+<p>Breaks tasks into steps and tracks progress in files.</p>
+<p class="use">Use when: a coding task runs longer than a few minutes and Claude loses track.</p></div>
+
+<h2>Official Anthropic, software engineering only</h2>
+<p>From <a href="https://github.com/anthropics/skills">anthropics/skills</a> (about 184k stars). Only the engineering ones made the list.</p>
+
+<div class="skill"><p><span class="num">8</span><span class="name">skill-creator</span></p>
+<p>A skill that writes skills, following Anthropic's own authoring practice.</p>
+<p class="use">Use when: you catch yourself explaining the same procedure twice.</p></div>
+
+<div class="skill"><p><span class="num">9</span><span class="name">mcp-builder</span></p>
+<p>Guide for building good MCP servers.</p>
+<p class="use">Use when: you need Claude to reach an API, database, or outside service.</p></div>
+
+<div class="skill"><p><span class="num">10</span><span class="name">frontend-design</span></p>
+<p>Distinctive, production-grade UI direction.</p>
+<p class="use">Use when: you build web interfaces and want to avoid generic-looking pages.</p></div>
+
+<div class="skill"><p><span class="num">11</span><span class="name">artifacts-builder</span></p>
+<p>Build complex HTML artifacts with React, Tailwind, shadcn.</p>
+<p class="use">Use when: you build interactive artifacts or web apps in Claude.</p></div>
+
+<div class="skill"><p><span class="num">12</span><span class="name">webapp-testing</span></p>
+<p>Test local web apps with Playwright for UI checks and debugging.</p>
+<p class="use">Use when: you need browser-driven QA before shipping a web app.</p></div>
+
+<h2>Frontend and UI</h2>
+
+<div class="skill"><p><span class="num">13</span><span class="name"><a href="https://github.com/nextlevelbuilder/ui-ux-pro-max-skill">UI-UX Pro Max</a></span></p>
+<p>Design intelligence: styles, palettes, UX rules.</p>
+<p class="use">Use when: your UI looks AI-made and you want a real design system.</p></div>
+
+<div class="skill"><p><span class="num">14</span><span class="name"><a href="https://github.com/Leonxlnx/taste-skill">Taste Skill</a></span></p>
+<p>Strict anti-slop rules for landing pages.</p>
+<p class="use">Use when: you want taste and restraint, not more components. Note: blind tests in Oct 2026 were mixed on this one, judge it on your own brief.</p></div>
+
+<h2>Understanding, docs, context</h2>
+
+<div class="skill"><p><span class="num">15</span><span class="name">Understand-Anything</span></p>
+<p>Turns a codebase into an interactive knowledge graph you can explore and ask about.</p>
+<p class="use">Use when: you are onboarding to an unfamiliar codebase. Search the name on GitHub, it has several mirrors.</p></div>
+
+<div class="skill"><p><span class="num">16</span><span class="name"><a href="https://github.com/upstash/context7">Context7</a></span></p>
+<p>Keeps current library docs in front of the model.</p>
+<p class="use">Use when: Claude keeps using outdated library APIs.</p></div>
+
+<div class="skill"><p><span class="num">17</span><span class="name"><a href="https://github.com/thedotmack/claude-mem">Claude-Mem</a></span></p>
+<p>Persistent memory across sessions.</p>
+<p class="use">Use when: Claude forgets your project between sessions.</p></div>
+
+<div class="skill"><p><span class="num">18</span><span class="name"><a href="https://github.com/cathrynlavery/diagram-design">Diagram Design</a></span> (about 53k stars)</p>
+<p>Architecture, flow, org, and timeline diagrams, 44 types, exports to HTML, SVG, PNG.</p>
+<p class="use">Use when: you need clean architecture diagrams from a codebase or a brief.</p></div>
+
+<h2>Efficiency and harness</h2>
+
+<div class="skill"><p><span class="num">19</span><span class="name"><a href="https://github.com/JuliusBrussee/caveman">Caveman</a></span></p>
+<p>Cuts output tokens hard while keeping technical accuracy.</p>
+<p class="use">Use when: you are hitting usage limits and want shorter output.</p></div>
+
+<div class="skill"><p><span class="num">20</span><span class="name">ECC</span></p>
+<p>Agent harness tuning: skills, memory, security, research-first workflow.</p>
+<p class="use">Use when: you want one harness setup across Claude Code, Codex, Cursor, and similar tools. Search "affaan-m/ecc" on GitHub, it has mirrors.</p></div>
+
+<h2>Watchlist for next Saturday</h2>
+<ul>
+  <li>gstack: full team-in-a-box process</li>
+  <li>Hallmark / Impeccable: anti-slop design, alternatives to 13 and 14</li>
+  <li>GitNexus: client-side knowledge graph with built-in RAG, alternative to 15</li>
+  <li>Context Engineering / Context Mode: token and context optimization, alternative to 19</li>
+  <li>claude-api (Anthropic): reference for building with the Claude API and SDKs</li>
+</ul>
+
+<h2>Left out on purpose</h2>
+<p>algorithmic-art, canvas-design, brand-guidelines, internal-comms, slack-gif-creator, theme-factory, docx, pdf, pptx, xlsx. Real Anthropic skills, just not software engineering. Full history in <a href="https://github.com/mrstartrag/engineering-claude-skills/blob/main/archive/ARCHIVED.md">archive</a>.</p>
+
+<footer>
+<p>Curated weekly. Rules in <a href="https://github.com/mrstartrag/engineering-claude-skills/blob/main/CURATION.md">CURATION.md</a>, history in <a href="https://github.com/mrstartrag/engineering-claude-skills/blob/main/CHANGELOG.md">CHANGELOG.md</a>, source at <a href="https://github.com/mrstartrag/engineering-claude-skills">github.com/mrstartrag/engineering-claude-skills</a>.</p>
+</footer>
+
+</body>
+</html>
