@@ -6,6 +6,8 @@ Last updated: 2026-10-28 (v1)
 Next curation: Saturday 2026-10-31, around 9am PT
 Rule: always 20. One in, one out. Dropped skills move to archive, never deleted.
 
+Browse it as a simple site: https://mrstartrag.github.io/engineering-claude-skills/
+
 This is an index, not a copy. Each entry links to its source repo. Read the source README and license before you install anything. Star counts below are from Oct 27-28 and change daily. Treat them as a popularity signal, not proof of quality.
 
 ## How to use this list
