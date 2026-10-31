@@ -96,6 +96,7 @@ Did not make v2. First in line if a Top 20 slot opens:
 - driving-seat (Tanmay-Ts/driving-seat): human decision gates before irreversible actions, new and unproven
 - Pristine: UI critique skill, no verified repo yet
 - playwright-cli skill: browser QA through an npm package, overlaps 12
+- MCode Stack (MiniMax-AI/mcode-stack): harness engineering skills from the MiniMax Code team, MIT, 476 stars, 3 days old, no published evals. Standouts: independent-review, long-command-check, subagent-split-check
 
 ## Left out on purpose
 
