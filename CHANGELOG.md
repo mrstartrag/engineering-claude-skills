@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-10-31 - v2, three swaps
+
+- Dropped GSD (slot 4): gsd-build/get-shit-done was archived by its maintainer; last commit May 2026, so it fails the 90-day rule. Replaced by garrytan/gstack (was watchlist #1): team-in-a-box process with slash-command roles for design, review, QA, security, and release. Install path verified by cloning the repo.
+- Dropped Karpathy Skills (slot 6): the linked source repo was deleted (404) and every known mirror is stale. Replaced by claude-api from anthropics/skills: the official API and SDK reference. SKILL.md verified in the repo.
+- Dropped Taste Skill (slot 14): superseded by pbakaus/impeccable, which shipped v4.8.0 this week with 62 deterministic anti-slop detector rules. The npm package resolves at 4.8.0. Taste ranked last in the Oct blind test this README cited.
+- Planning with Files moved from the old Thinking section into Workflow (slot 6). The Thinking and discipline section is gone; its other entry is archived.
+- Watchlist: gstack, impeccable, and claude-api promoted out. Hallmark is now first in line. Added open-gsd/gsd-core, driving-seat, Pristine, and the playwright-cli skill as new names to watch.
+- The other 17 entries were rechecked: every source repo has a commit in the last 90 days. No breaking changes found.
+
 ## 2026-10-28 - Plain human rewrite
 
 - Rewrote all files in a human voice: keyboard characters only, short sentences, no AI-style symbols. No list changes.
