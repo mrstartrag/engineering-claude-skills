@@ -2,18 +2,18 @@
 
 A weekly curated list. Software engineering only, no fluff.
 
-Last updated: 2026-10-28 (v1)
-Next curation: Saturday 2026-10-31, around 9am PT
+Last updated: 2026-10-31 (v2)
+Next curation: Saturday 2026-11-07, around 9am PT
 Rule: always 20. One in, one out. Dropped skills move to archive, never deleted.
 
 Browse it as a simple site: https://aiships.github.io/engineering-claude-skills/
 
-This is an index, not a copy. Each entry links to its source repo. Read the source README and license before you install anything. Star counts below are from Oct 27-28 and change daily. Treat them as a popularity signal, not proof of quality.
+This is an index, not a copy. Each entry links to its source repo. Read the source README and license before you install anything. Star counts below are from Oct 27-31 and change daily. Treat them as a popularity signal, not proof of quality.
 
 ## How to use this list
 
-1. Start with one workflow framework from 1-5, not all five.
-2. Add the official Anthropic skills you actually need from 8-12.
+1. Start with one workflow framework from 1-6, not all six.
+2. Add the official Anthropic skills you actually need from 7-12.
 3. Add one skill per real pain point after that: UI, understanding code, context, tokens.
 4. Install only what you will use. Every enabled skill costs context.
 
@@ -41,26 +41,19 @@ cp -r <skill-folder> .claude/skills/
 | 1 | Superpowers | [obra/superpowers](https://github.com/obra/superpowers), about 306k stars, checked Oct 28 on GitHub | Plan first, test-driven development, systematic debugging, subagent-driven work, verify before finishing | You want Claude Code to act like a disciplined senior engineer instead of jumping straight to code |
 | 2 | Matt Pocock Skills | [mattpocock/skills](https://github.com/mattpocock/skills) | Small composable skills for real engineering work | You want bite-size skills you can adopt one at a time |
 | 3 | Addy Osmani Agent Skills | [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills), about 101k stars | Production-grade spec, build, test, ship workflows | You want a shipping workflow, not just a coding helper |
-| 4 | GSD - Get Shit Done | [gsd-build/get-shit-done](https://github.com/gsd-build/get-shit-done) | Spec-driven work with tight context | You want a spec before code and context kept small |
+| 4 | gstack | [garrytan/gstack](https://github.com/garrytan/gstack), about 138k stars, checked Oct 31 on GitHub | Team-in-a-box process: slash-command roles for design, eng management, review, QA, security, and release | You want a full engineering-team process around your agent, not just a coding helper |
 | 5 | BMAD-METHOD | [bmad-code-org/BMAD-METHOD](https://github.com/bmad-code-org/BMAD-METHOD) | Agile AI-driven development method | You want an agile, role-based method for bigger builds |
-
-### Thinking and discipline
-
-| # | Skill | Source | What it does | When to use it |
-|---|---|---|---|---|
-| 6 | Karpathy Skills | [andrej-karpathy-skills](https://github.com/Anthropic-OpenSource/andrej-karpathy-skills), see note below | Think before coding, simplicity first, small surgical changes, goal-driven work. A bug fix means writing a reproducing test first | You keep getting 1000-line fixes for 100-line problems |
-| 7 | Planning with Files | [OthmanAdi/planning-with-files](https://github.com/OthmanAdi/planning-with-files) | Breaks tasks into steps and tracks progress in files | Any coding task longer than a few minutes, where Claude loses track |
-
-Note on 6: the Karpathy rules float around as a single CLAUDE.md in several mirrors. Check the source you install from and read it before use. It leans cautious, so skip the full ritual for a typo fix.
+| 6 | Planning with Files | [OthmanAdi/planning-with-files](https://github.com/OthmanAdi/planning-with-files) | Breaks tasks into steps and tracks progress in files | Any coding task longer than a few minutes, where Claude loses track |
 
 ### Official Anthropic, software engineering only
 
-Source: [anthropics/skills](https://github.com/anthropics/skills), about 184k stars, 19 skill folders as of Oct 21. Only the engineering ones made the Top 20. Document, brand, art, and comms skills are in archive.
+Source: [anthropics/skills](https://github.com/anthropics/skills), about 184k stars, 19 skill folders, checked Oct 31 on GitHub. Only the engineering ones made the Top 20. Document, brand, art, and comms skills are in archive.
 
 | # | Skill | What it does | When to use it |
 |---|---|---|---|
-| 8 | skill-creator | A skill that writes skills, following Anthropic's own authoring practice | Every time you catch yourself explaining the same procedure twice |
-| 9 | mcp-builder | Guide for building good MCP servers | You need Claude to reach an API, database, or outside service |
+| 7 | skill-creator | A skill that writes skills, following Anthropic's own authoring practice | Every time you catch yourself explaining the same procedure twice |
+| 8 | mcp-builder | Guide for building good MCP servers | You need Claude to reach an API, database, or outside service |
+| 9 | claude-api | Reference for the Claude API and SDKs: model ids, pricing, params, streaming, tool use, caching | You build with the Claude API and want current facts, not the model's memory |
 | 10 | frontend-design | Distinctive, production-grade UI direction | You build web interfaces and want to avoid generic-looking pages |
 | 11 | artifacts-builder | Build complex HTML artifacts with React, Tailwind, shadcn | You build interactive artifacts or web apps in Claude |
 | 12 | webapp-testing | Test local web apps with Playwright for UI checks and debugging | You need browser-driven QA before shipping a web app |
@@ -70,9 +63,9 @@ Source: [anthropics/skills](https://github.com/anthropics/skills), about 184k st
 | # | Skill | Source | What it does | When to use it |
 |---|---|---|---|---|
 | 13 | UI-UX Pro Max | [nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) | Design intelligence: styles, palettes, UX rules | Your UI looks AI-made and you want a real design system |
-| 14 | Taste Skill | [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill) | Strict anti-slop rules for landing pages | You want taste and restraint, not more components |
+| 14 | Impeccable | [pbakaus/impeccable](https://github.com/pbakaus/impeccable), about 98k stars, checked Oct 31 on GitHub | Design vocabulary for agents: polish, critique, audit commands plus 62 deterministic anti-slop detector rules | Your agent-built UI looks generic and you want concrete, checkable design feedback |
 
-Honest caveat: independent blind tests in Oct 2026 ranked UI-UX Pro Max first and Taste last on one test, and some design skills burn a lot of tokens. Use one design skill at a time and judge on your own brief.
+Honest caveat: independent blind tests in Oct 2026 ranked UI-UX Pro Max first on one test, and impeccable is this week's fastest riser, with deterministic detectors instead of LLM judgment. Some design skills burn a lot of tokens. Use one design skill at a time and judge on your own brief.
 
 ### Understanding, docs, context
 
@@ -94,13 +87,15 @@ Check the exact owner and repo for 15 and 20 before installing. These names have
 
 ## Watchlist for next Saturday
 
-Did not make v1. First in line if a Top 20 slot opens:
+Did not make v2. First in line if a Top 20 slot opens:
 
-- gstack (garrytan/gstack): full team-in-a-box process
-- Hallmark (Nutlope/hallmark) / Impeccable (pbakaus/impeccable): anti-slop design, alternatives to 13 and 14
+- Hallmark (Nutlope/hallmark): anti-slop design with 50 themes and a browser lint, alternative to 13
 - GitNexus: client-side knowledge graph with built-in RAG, alternative to 15
 - Context Engineering / Context Mode: token and context optimization, alternative to 19
-- claude-api (Anthropic): reference for building with the Claude API and SDKs
+- open-gsd/gsd-core: the official successor to the archived GSD, install with npx @opengsd/gsd-core
+- driving-seat (Tanmay-Ts/driving-seat): human decision gates before irreversible actions, new and unproven
+- Pristine: UI critique skill, no verified repo yet
+- playwright-cli skill: browser QA through an npm package, overlaps 12
 
 ## Left out on purpose
 
